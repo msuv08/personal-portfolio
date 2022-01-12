@@ -6,8 +6,13 @@
   --header-height: 3rem;
 
   /*===== Colors =====*/
-  --first-color: #3E0E12;
+  /* --first-color: #3E0E12;
   --first-color-dark: #2F0A0D;
+  --text-color: #524748;
+  --first-color-light: #7B6F71;
+  --first-color-lighten: #FBF9F9; */
+  --first-color: #e75f10;
+  --first-color-dark: #bf5700;
   --text-color: #524748;
   --first-color-light: #7B6F71;
   --first-color-lighten: #FBF9F9;
@@ -587,6 +592,7 @@ img{
   margin: 0 var(--mb-1);
 }
 .contact__description{
+  color: var(--first-color-light);
   margin: var(--mb-1) 0;
   font-size: 0.8rem;
 }
