@@ -69,7 +69,11 @@ const mixer = mixitup('.portfolio__container',{
         target: '.portfolio__content'
     },
     animation: {
-        duration: 400
+        clampHeight: false,
+        clampWidth: false,
+        duration: 1000,
+        easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+        animateResizeTargets: true
     }
 });
 /* Link active portfolio */ 
