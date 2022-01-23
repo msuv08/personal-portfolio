@@ -1,4 +1,5 @@
 /*===== SHOW MENU =====*/
+window.scrollTo(0,1)
 const showMenu = (toggleId,navId)=>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -141,5 +142,7 @@ let t2 = gsap.timeline({
     }
 });
 
+
+// Fix education showing up late on single view cols
 t2.from('.qual__subheader, .qual__header, .qual__title, .qual__data, .qual__area, .qual__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.1})
 .from('.education__title, .education__data, .education__area, .education__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.2}, "-=3.9")
