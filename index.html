@@ -69,8 +69,8 @@
             
             <!--===== ABOUT =====-->
             <section class="about section bd-container" id="about">
-                <span class="section-subtitle">My history</span>
-                <h2 class="section-title">About me</h2>
+                <span class="section-subtitle about__header">My history</span>
+                <h2 class="section-title about__me">About me</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__data bd-grid">
@@ -100,34 +100,34 @@
 
             <!--===== QUALIFICATION =====-->
             <section class="qualification section bd-container">
-                <span class="section-subtitle">Experience and Education</span>
-                <h2 class="section-title">Qualification</h2>
+                <span class="section-subtitle qual__subheader">Experience and Education</span>
+                <h2 class="section-title qual__header">Qualification</h2>
 
                 <div class="qualification__container bd-grid">
                     <div class="qualification__content">
-                        <h2 class="qualification__title">
+                        <h2 class="qualification__title qual__title">
                             <i class='bx bx-briefcase-alt qualification__title-icon' ></i>
                             Work Experience
                         </h2>
                         
                         <div class="bd-grid">
-                            <div class="qualification__data">
-                                <h3 class="qualification__area">Technical Program Manager for UT Austin</h3>
+                            <div class="qualification__data qual__data">
+                                <h3 class="qualification__area qual__area">Technical Program Manager for UT Austin</h3>
                                 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-map-pin qualification__icon' ></i>
                                         CodePath - Remote
                                     </span>
 
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-calendar-alt qualification__icon' ></i>
                                         Jun 2021 - Aug 2021
                                     </span>
                                 </div>
                                 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <details> 
                                             <summary>Role and Responsibility</summary>
                                             <ul>
@@ -146,23 +146,23 @@
                                 </div>
                             </div>
 
-                            <div class="qualification__data">
-                                <h3 class="qualification__area">Student Researcher for R-BOSS</h3>
+                            <div class="qualification__data qual__data">
+                                <h3 class="qualification__area qual__area">Student Researcher for R-BOSS</h3>
                                 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-map-pin qualification__icon' ></i>
                                         Pennsylvania State University - State College, PA
                                     </span>
 
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-calendar-alt qualification__icon' ></i>
                                         Jul 2019 - Dec 2020
                                     </span>
                                 </div>
 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <details> 
                                             <summary>Role and Responsibility</summary>
                                             <ul>
@@ -187,23 +187,23 @@
                                 </div>
                             </div>
 
-                            <div class="qualification__data">
-                                <h3 class="qualification__area">Math Instructor</h3>
+                            <div class="qualification__data qual__data">
+                                <h3 class="qualification__area qual__area">Math Instructor</h3>
                                 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-map-pin qualification__icon' ></i>
                                         Mathnasium - Cypress, TX
                                     </span>
 
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <i class='bx bx-calendar-alt qualification__icon' ></i>
                                         Jul 2019 - Dec 2020
                                     </span>
                                 </div>
 
                                 <div class="qualification__box">
-                                    <span class="qualification__work">
+                                    <span class="qualification__work qual__work">
                                         <details> 
                                             <summary>Role and Responsibility</summary>
                                             <ul>
@@ -222,34 +222,34 @@
                     </div>
 
                     <div class="qualification__content">
-                        <h2 class="qualification__title">
+                        <h2 class="qualification__title education__title">
                             <i class='bx bx-book-bookmark qualification__title-icon' ></i>
                             Education
                         </h2>
                         
                         <div class="bd-grid">
-                            <div class="qualification__data">
-                                <h3 class="qualification__area">Bachelors of Science, CS</h3>
+                            <div class="qualification__data education__data">
+                                <h3 class="qualification__area education__area">Bachelors of Science, CS</h3>
                                 
-                                <div class="qualification__box">
-                                    <span class="qualification__work">
+                                <div class="qualification__box education__box">
+                                    <span class="qualification__work education__work">
                                         <i class='bx bxs-graduation qualification__icon'></i>
                                         The University of Texas at Austin
                                     </span>
 
-                                    <span class="qualification__work">
+                                    <span class="qualification__work education__work">
                                         <i class='bx bx-math'></i>
                                         GPA: 3.78
                                     </span>
 
-                                    <span class="qualification__work">
+                                    <span class="qualification__work education__work">
                                         <i class='bx bx-calendar-alt qualification__icon' ></i>
                                         Aug 2020 - May 2024
                                     </span>
                                 </div>
 
-                                <div class="qualification__box">
-                                    <span class="qualification__work">
+                                <div class="qualification__box education__box">
+                                    <span class="qualification__work education__work">
                                         <details> 
                                             <summary>Relevant Classes</summary>
                                             <ul>
@@ -590,13 +590,19 @@
         
         <!-- ===== GSAP ===== -->
         <script src="assets/js/gsap.min.js"></script>
+        <!-- ===== SCROLL TRIGGER GSAP ===== -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
         
-        <!--===== MAIN JS =====-->
+        <!-- ===== MAIN JS ===== -->
         <script src="assets/js/main.js"></script>
 
-        <!--===== SMOOTH SCROLL JS ACTIVATION =====-->
+        <!-- ===== SMOOTH SCROLL JS ACTIVATION ===== -->
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
         </script>
+
     </body>
 </html>

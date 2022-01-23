@@ -107,6 +107,7 @@ const swiper = new Swiper('.hobbies__container', {
 })
 
 /*===== GSAP ANIMATION =====*/ 
+// gsap.registerPlugin(ScrollTrigger);
 gsap.from('.home__img', {opacity:0, duration:2, delay:.5, x:60})
 gsap.from('.home__data', {opacity:0, duration:2, delay:.8, y:25})
 gsap.from('.home_greeting, .home__name, .home__profession, .home__button', {opacity:0, duration:2, delay:1, y:25, ease:'expo.out', stagger:.2})
@@ -115,3 +116,30 @@ gsap.from('.nav__logo, .nav__toggle', {opacity:0, duration:2, delay:1.5, y:25, e
 gsap.from('.nav__item', {opacity:0, duration:2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
 gsap.from('.home__social-icon', {opacity:0, duration:2, delay:2.3, y:25, ease:'expo.out', stagger:.2})
 
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+}
+
+window.onresize()
+
+let t1 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'#about',
+        markers:true,
+        start: "top 80%"
+    }
+});
+
+t1.from('.about__img', {opacity:0, duration:2, delay:.2, x:60})
+.from('.about__header, .about__me, .about__description, .about__number, .about_achievement', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.1}, "-=2.2")
+
+let t2 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.qualification__content',
+        markers:true,
+        start: "top 90%"
+    }
+});
+
+t2.from('.qual__subheader, .qual__header, .qual__title, .qual__data, .qual__area, .qual__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.1})
+.from('.education__title, .education__data, .education__area, .education__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.2}, "-=3.9")
