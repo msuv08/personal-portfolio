@@ -1,12 +1,4 @@
 /*===== SHOW MENU =====*/
-window.addEventListener("load",function() {
-	// Set a timeout...
-	setTimeout(function(){
-		// Hide the address bar!
-		window.scrollTo(0, 1);
-	}, 0);
-});
-
 const showMenu = (toggleId,navId)=>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -123,12 +115,6 @@ gsap.from('.home_greeting, .home__name, .home__profession, .home__button', {opac
 gsap.from('.nav__logo, .nav__toggle', {opacity:0, duration:2, delay:1.5, y:25, ease:'expo.out', stagger:.2})
 gsap.from('.nav__item', {opacity:0, duration:2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
 gsap.from('.home__social-icon', {opacity:0, duration:2, delay:2.3, y:25, ease:'expo.out', stagger:.2})
-
-window.onresize = function() {
-    document.body.height = window.innerHeight;
-}
-
-window.onresize()
 
 let t1 = gsap.timeline({
     scrollTrigger: {

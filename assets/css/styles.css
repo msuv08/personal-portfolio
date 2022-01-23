@@ -297,6 +297,7 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
+  margin-bottom: var(--mb-3);
 }
 
 .home__img img{
