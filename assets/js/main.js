@@ -125,7 +125,7 @@ window.onresize()
 let t1 = gsap.timeline({
     scrollTrigger: {
         trigger:'#about',
-        markers:true,
+        // markers:true,
         start: "top 80%"
     }
 });
@@ -136,7 +136,7 @@ t1.from('.about__img', {opacity:0, duration:2, delay:.2, x:60})
 let t2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.qualification__content',
-        markers:true,
+        // markers:true,
         start: "top 90%"
     }
 });
