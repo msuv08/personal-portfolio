@@ -1,5 +1,12 @@
 /*===== SHOW MENU =====*/
-window.scrollTo(0,1)
+window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});
+
 const showMenu = (toggleId,navId)=>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
