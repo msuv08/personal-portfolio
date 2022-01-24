@@ -863,3 +863,8 @@ li {
 *:focus {
   outline: 0 !important;
 }
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+}
