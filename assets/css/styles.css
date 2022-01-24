@@ -250,7 +250,7 @@ img{
 }
 
 /*===== HOME =====*/
-#home, #header{
+#home, #header {
   /* Flash Of Unwanted Content */
   visibility: hidden;
 }
