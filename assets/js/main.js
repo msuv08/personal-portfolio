@@ -142,7 +142,59 @@ let t3 = gsap.timeline({
     }
 });
 
-
-// Fix education showing up late on single view cols
 t2.from('.qual__subheader, .qual__header, .qual__title, .qual__data, .qual__area, .qual__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.1})
 t3.from('.education__title, .education__data, .education__area, .education__work', {opacity:0, duration: 2, delay:.2, y:25, ease:'expo.out', stagger:.1},"+=0.2")
+
+let t4 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.skills__section',
+        // markers:true,
+        start: "top 80%"
+    }
+});
+t4.from('.skills__data, .skills__header, .skills__title', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+
+let t5 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.project__container',
+        // markers:true,
+        start: "top 85%"
+    }
+});
+t5.from('.project__container, .project__data, .project__title, .project__description, .button-white', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+
+let t6 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.portfolio__section',
+        // markers:true,
+        start: "top 90%"
+    }
+});
+t6.from('.portfolio__title, .portfolio__subtitle, .portfolio__nav, .portfolio__item, .portfolio__content, .button-link', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.075})
+
+let t7 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.hobbies__section',
+        // markers:true,
+        start: "top 90%"
+    }
+});
+t7.from('.hobbies__title, .hobbies__subtitle, .hobbies__content, .hobbies__description, .hobbies__client, .swiper-pagination', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.045})
+
+let t8 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.contact__section',
+        // markers:true,
+        start: "top 80%"
+    }
+});
+t8.from('.contact__maintitle, .contact__subtitle, .contact__box, .contact__description', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+
+let t9 = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.contact__form',
+        // markers:true,
+        start: "top 90%"
+    }
+});
+t9.from('.send__title, .send__subtitle, .contact__inputs, .contact__button, .contact__input', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
