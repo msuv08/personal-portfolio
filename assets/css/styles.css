@@ -250,6 +250,11 @@ img{
 }
 
 /*===== HOME =====*/
+#home, #header{
+  /* Flash Of Unwanted Content */
+  visibility: hidden;
+}
+
 .home{
   background-color: #000;
   overflow: hidden;

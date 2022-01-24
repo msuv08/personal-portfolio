@@ -107,13 +107,21 @@ const swiper = new Swiper('.hobbies__container', {
 })
 
 /*===== GSAP ANIMATION =====*/ 
-gsap.from('.home__img', {opacity:0, duration:2, delay:.5, x:60})
-gsap.from('.home__data', {opacity:0, duration:2, delay:.8, y:25})
-gsap.from('.home_greeting, .home__name, .home__profession, .home__button', {opacity:0, duration:2, delay:1, y:25, ease:'expo.out', stagger:.2})
 
-gsap.from('.nav__logo, .nav__toggle', {opacity:0, duration:2, delay:1.5, y:25, ease:'expo.out', stagger:.2})
-gsap.from('.nav__item', {opacity:0, duration:2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
-gsap.from('.home__social-icon', {opacity:0, duration:2, delay:2.3, y:25, ease:'expo.out', stagger:.2})
+let t0 = gsap.timeline({
+    scrollTrigger: "#home",
+});
+
+function init(){
+    t0.from('#home, #header', {autoAlpha:0, duration: 0.1}, "0")
+    t0.from('.home__img', {autoAlpha:0, duration:2, delay:.5, x:60}, "0")
+    t0.from('.home__data', {autoAlpha:0, duration:2, delay:.8, y:25}, "0")
+    t0.from('.home_greeting, .home__name, .home__profession, .home__button', {autoAlpha:0, duration:2, delay:1, y:25, ease:'expo.out', stagger:.2}, "0")
+    t0.from('.nav__logo, .nav__toggle', {autoAlpha:0, duration:2, delay:1.5, y:25, ease:'expo.out', stagger:.2}, "0")
+    t0.from('.nav__item', {autoAlpha:0, duration:2, delay:1.8, y:25, ease:'expo.out', stagger:.2}, "0")
+    t0.from('.home__social-icon', {autoAlpha:0, duration:2, delay:2.3, y:25, ease:'expo.out', stagger:.2}, "0")
+}
+
 
 let t1 = gsap.timeline({
     scrollTrigger: {
@@ -198,3 +206,7 @@ let t9 = gsap.timeline({
     }
 });
 t9.from('.send__title, .send__subtitle, .contact__inputs, .contact__button, .contact__input', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+
+window.addEventListener("load", function(event){
+    init();
+});
