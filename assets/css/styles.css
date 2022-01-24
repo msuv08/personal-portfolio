@@ -581,7 +581,8 @@ img{
 }
 
 .contact__content{
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,  minmax(150px, 1fr));
 }
 
 .contact__box{
@@ -613,7 +614,7 @@ img{
 .contact__description{
   color: var(--first-color-light);
   margin: var(--mb-1) 0;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .contact__box:hover{

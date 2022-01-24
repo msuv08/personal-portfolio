@@ -169,7 +169,7 @@ let t5 = gsap.timeline({
         start: "top 85%"
     }
 });
-t5.from('.project__container, .project__data, .project__title, .project__description, .button-white', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+t5.from('.project__container, .project__data, .project__title, .project__description', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
 
 let t6 = gsap.timeline({
     scrollTrigger: {

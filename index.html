@@ -548,7 +548,7 @@
                         <div class="contact__box">
                             <i class='bx bx-phone contact__icon' ></i>
                             <h3 class="contact__title">Phone</h3>
-                            <span class="contact__description">(832)833-0096</span>
+                            <span class="contact__description">(512) 710-8188</span>
                         </div>
                         <!--==== Implement in a future version: clickable cards. This is an example.  ====-->
                         <div class="contact__box">
@@ -570,7 +570,7 @@
                         </div>
                     </div>
 
-                    <form action="https://formsubmit.co/mihirsuvarna@utexas.edu" method="POST" class="contact__form">
+                    <form action="POST" name= "contact" data-netlify="true" class="contact__form">
                         <span class="section-subtitle send__title">Or...</span>
                         <h2 class="section-title send__subtitle">Send me a message</h2>
                         <div class="contact__inputs">
@@ -579,12 +579,14 @@
                         </div>
 
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Subject" name="_subject" class="contact__input">
+                            <input type="text" placeholder="Subject" name="subject" class="contact__input">
                             <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" class="contact__input">
                         </div>
 
                         <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
-
+                        <div class="field">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
                         <input type="submit" value="Send Message" class="button contact__button">
                     </form>
                 </div>
