@@ -205,7 +205,7 @@ let t9 = gsap.timeline({
         start: "top 90%"
     }
 });
-t9.from('.send__title, .send__subtitle, .contact__inputs, .contact__button, .contact__input', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
+t9.from('.send__title, .send__subtitle, .contact__inputs, .contact__button, .contact__input, .recaptcha__tag', {opacity:0, duration: 2, delay:.2, y:40, ease:'expo.out', stagger:.1})
 
 window.addEventListener("load", function(event){
     init();
