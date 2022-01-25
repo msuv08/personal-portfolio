@@ -588,7 +588,7 @@ img{
 .contact__box{
   background-color: #FFF;
   border-radius: .5rem;
-  padding: 1.5rem;
+  padding: var(--mb-1);
   text-align: center;
   box-shadow: 0 4px 6px rgba(174,190,205,.3);
 }
@@ -606,12 +606,8 @@ img{
   margin: var(--mb-1) 0;
 }
 
+.contact__description,
 .contact__social{
-  color: var(--first-color-light);
-  font-size: 1.25rem;
-  margin: 0 var(--mb-1);
-}
-.contact__description{
   color: var(--first-color-light);
   margin: var(--mb-1) 0;
   font-size: 0.6rem;
