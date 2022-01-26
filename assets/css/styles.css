@@ -860,8 +860,8 @@ li {
 }
 
 *:focus {
+  outline: none !important;
   -webkit-tap-highlight-color: transparent;
-  outline: 0 !important;
 }
 
 a[href^="tel"] {
