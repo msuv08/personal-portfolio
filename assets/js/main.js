@@ -113,7 +113,7 @@ let t0 = gsap.timeline({
 });
 
 function init(){
-    t0.from('#home, #header', {autoAlpha:0, duration: 0.0000000000000000000000001}, "0")
+    t0.from('#home, #header', {autoAlpha:0, duration: 0.000000000000000000000000000000000000000000000001}, "0")
     t0.from('.home__img', {autoAlpha:0, duration:2, delay:.5, x:60}, "0")
     t0.from('.home__data', {autoAlpha:0, duration:2, delay:.8, y:25}, "0")
     t0.from('.home_greeting, .home__name, .home__profession, .home__button', {autoAlpha:0, duration:2, delay:1, y:25, ease:'expo.out', stagger:.2}, "0")
