@@ -353,14 +353,14 @@ section {
 .hero__frame {
   background: linear-gradient(135deg, rgba(185, 255, 99, 0.15), rgba(0, 0, 0, 0));
   border-radius: var(--radius);
-  padding: 2rem;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .hero__frame img {
-  width: 230px;
-  margin: 0 auto;
+  width: 100%;
+  display: block;
 }
 
 .hero__note,
