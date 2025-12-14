@@ -605,6 +605,12 @@ section {
   font-weight: 600;
 }
 
+.blog__note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .contact {
   background: var(--bg-alt);
 }
