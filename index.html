@@ -1,662 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Primary Meta Tags -->
-        <title>Mihir Suvarna</title>
-        <meta name="title" content="Mihir Suvarna">
-        <meta name="description" content="UT '24 | Austin, TX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mihir Suvarna</title>
+    <meta
+      name="description"
+      content="Software engineer shaping responsible AI systems for modern finance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mihirsuvarna.com" />
+    <meta property="og:title" content="Mihir Suvarna" />
+    <meta
+      property="og:description"
+      content="Software engineer shaping responsible AI systems for modern finance."
+    />
+    <meta property="og:image" content="https://www.mihirsuvarna.com/assets/img/ogimage.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mihir Suvarna" />
+    <meta
+      name="twitter:description"
+      content="Software engineer shaping responsible AI systems for modern finance."
+    />
+    <meta name="twitter:image" content="https://www.mihirsuvarna.com/assets/img/ogimage.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  </head>
+  <body>
+    <a href="#home" class="skip-link">Skip to content</a>
+    <header class="site-header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">MS</a>
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__menu" id="nav-menu">
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#projects" class="nav__link">Work</a>
+          <a href="#blog" class="nav__link">Writing</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.mihirsuvarna.com/">
-        <meta property="og:title" content="Mihir Suvarna">
-        <meta property="og:description" content="UT '24 | Austin, TX">
-        <meta property="og:image" content="https://www.mihirsuvarna.com/assets/img/ogimage.png">
-
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://www.mihirsuvarna.com/">
-        <meta property="twitter:title" content="Mihir Suvarna">
-        <meta property="twitter:description" content="UT '24 | Austin, TX">
-        <meta property="twitter:image" content="https://www.mihirsuvarna.com/assets/img/ogimage.png">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-        <!-- ===== SWIPER CSS ===== -->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel='stylesheet' href='assets/css/all.css'>
-
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
-    <script>
-        // Quick change to white color after elements loaded
-        function changeColor(){
-            document.body.style.backgroundColor = "#FFF"
-        }
-    </script>
-    <body style="background-color: black;" onload="changeColor()">
-        <!--===== SCROLL TOP =====-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon' ></i>
-        </a>
-        
-        <!--===== HEADER =====-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">MS</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Mihir Suvarna</h1>
-                        <span class="home__profession">CS Student @ UT Austin</span>
-                        <a download="" href="" class="button button home__button">Download Resume</a>
-                    </div>
-
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/mihir-suvarna/" class="home__social-icon"><i class='bx bxl-linkedin fa-lg' ></i></a>
-                        <a href="https://www.github.com/msuv08/" class="home__social-icon"><i class='bx bxl-github fa-lg' ></i></a>
-                        <a href="https://www.researchgate.net/profile/Mihir-Suvarna" class="home__social-icon"><i class="fab fa-researchgate fa-lg"></i></a>
-                    </div>
-
-                    <div class="home__img">
-                        <img src="assets/img/circlepic.png" alt="">
-                    </div>
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section bd-container" id="about">
-                <span class="section-subtitle about__header">My history</span>
-                <h2 class="section-title about__me">About me</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__data bd-grid">
-                        <p class="about__description"><span>Howdy!<br></span>I'm a fulltime student at The University 
-                            of Texas at Austin. I'm interested in AI/ML & I love working on open-source projects! I 
-                            have a background developing in Python, Java, and Swift.</p>
-
-                        <div>
-                            <span class="about__number">7</span>
-                            <span class="about_achievement">Years of CS Experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about__number">5+</span>
-                            <span class="about_achievement">Licensed Open-Sourced Projects</span>
-                        </div>
-
-                        <div>
-                            <span class="about__number">1</span>
-                            <span class="about_achievement">Published Research Work(s)</span>
-                        </div>
-                    </div>
-
-                    <img src="assets/img/aboutpic.jpeg" alt="" class="about__img">
-                </div>
-            </section>
-
-            <!--===== QUALIFICATION =====-->
-            <section class="qualification section bd-container">
-                <span class="section-subtitle qual__subheader">Experience and Education</span>
-                <h2 class="section-title qual__header">Qualification</h2>
-
-                <div class="qualification__container bd-grid">
-                    <div class="qualification__content qual__content">
-                        <h2 class="qualification__title qual__title">
-                            <i class='bx bx-briefcase-alt qualification__title-icon' ></i>
-                            Work Experience
-                        </h2>
-                        
-                        <div class="bd-grid">
-                            <div class="qualification__data qual__data">
-                                <h3 class="qualification__area qual__area">Software Engineering Intern</h3>
-                                
-                                <div class="qualification__box">
-                                    <span class="qualification__work qual__work">
-                                        <i class='bx bx-map-pin qualification__icon' ></i>
-                                        Autonomic - Palo Alto, CA
-                                    </span>
-
-                                    <span class="qualification__work qual__work">
-                                        <i class='bx bx-calendar-alt qualification__icon' ></i>
-                                        Jun - Aug 2022
-                                    </span>
-                                </div>
-                                
-                                <div class="qualification__box">
-                                    <span class="qualification__work qual__work">
-                                        <details> 
-                                            <summary>Role and Responsibility</summary>
-                                            <ul>
-                                                <li> I built an end-to-end architectural monitoring system for the TMC (Total Mobility Cloud) used by 100+ developers, 
-                                                    supporting cloud systems across a fleet of 10M+ vehicles, processing 1B+ telemetry signals. </li>
-                                                <li> With strong infrastructure-based knowledge, I provided real-time insights and improved connectivity flows 
-                                                    using AWS, Kafka, Kubernetes, and JavaScript.  I also led a team of 3 interns in backend development driven by Agile
-                                                    methodologies with weekly touchpoints.</li>
-                                              </ul>
-                                        </details>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="qualification__data qual__data">
-                                <h3 class="qualification__area qual__area">Artificial Intelligence Consultant</h3>
-                                
-                                <div class="qualification__box">
-                                    <span class="qualification__work qual__work">
-                                        <i class='bx bx-map-pin qualification__icon' ></i>
-                                        Responsible AI Insitute - Austin, TX
-                                    </span>
-
-                                    <span class="qualification__work qual__work">
-                                        <i class='bx bx-calendar-alt qualification__icon' ></i>
-                                        Jan - Apr 2022
-                                    </span>
-                                </div>
-
-                                <div class="qualification__box">
-                                    <span class="qualification__work qual__work">
-                                        <details> 
-                                            <summary>Role and Responsibility</summary>
-                                            <ul>
-                                                <li>
-                                                    I created a workshop for more than 5+ RAI partner companies around designing and re-working existing industrial
-                                                    artificial intelligence systems centered on both Microsoft and Google responsible AI practices.
-                                                </li>
-                                                <li>
-                                                    I optimized methods for automating ethical AI reports and certifying industrial AI software using innovative digital
-                                                    tools in collaboration with post doctorate students from the University of Cambridge.
-                                                </li>
-                                              </ul>
-                                        </details>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="qualification__content education__content">
-                        <h2 class="qualification__title education__title">
-                            <i class='bx bx-book-bookmark qualification__title-icon' ></i>
-                            Education
-                        </h2>
-                        
-                        <div class="bd-grid">
-                            <div class="qualification__data education__data">
-                                <h3 class="qualification__area education__area">Masters of Science, CS</h3>
-                                
-                                <div class="qualification__box education__box">
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bxs-graduation qualification__icon'></i>
-                                        The University of Texas at Austin
-                                    </span>
-
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bx-math'></i>
-                                        GPA:  3.73
-                                    </span>
-
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bx-calendar-alt qualification__icon' ></i>
-                                        Aug 2022 - May 2024
-                                    </span>
-                                </div>
-
-                                <div class="qualification__box education__box">
-                                    <span class="qualification__work education__work">
-                                        <details> 
-                                            <summary>More Info and Relevant Classes</summary>
-                                            
-                                            <ul>
-                                                <li>
-                                                    I'm pursuing a Masters through the 5-Year Integrated Masters Program at UT Austin.
-                                                </li>
-                                                <li>
-                                                    <br>
-
-                                                </li>
-                                                <li>
-                                                    In Progress: 
-                                                    <ul>
-                                                        <li>
-                                                            - Robot Learning
-                                                        </li>
-                                                        <li>
-                                                            - Cybersecurity Law and Policy
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Planned:
-                                                    <ul>
-                                                        <li>
-                                                            - Predictive Search and Reasoning
-                                                        </li>
-                                                        <li>
-                                                            - Analysis of Boolean Functions
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                              </ul>
-                                        </details>
-                                    </span>
-                                </div>
-                            </div>  
-                            <div class="qualification__data education__data">
-                                <h3 class="qualification__area education__area">Bachelors of Science, CS</h3>
-                                
-                                <div class="qualification__box education__box">
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bxs-graduation qualification__icon'></i>
-                                        The University of Texas at Austin
-                                    </span>
-
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bx-math'></i>
-                                        GPA: 3.73
-                                    </span>
-
-                                    <span class="qualification__work education__work">
-                                        <i class='bx bx-calendar-alt qualification__icon' ></i>
-                                        Aug 2020 - May 2023
-                                    </span>
-                                </div>
-
-                                <div class="qualification__box education__box">
-                                    <span class="qualification__work education__work">
-                                        <details> 
-                                            <summary>More Info and Relevant Classes</summary>
-                                            <ul>
-                                                <li>
-                                                    I will earn a AI/ML specialization upon completion of my Bachelors.
-                                                </li>
-                                                <li>
-                                                    <br>
-                                                </li>
-                                                <li>
-                                                    Previously Taken: 
-                                                    <ul>
-                                                        <li>
-                                                            - Artificial Intelligence
-                                                        </li>
-                                                        <li>
-                                                            - Neural Networks
-                                                        </li>
-                                                        <li>
-                                                            - Computer Vision
-                                                        </li>
-                                                        <li>
-                                                            - AI Ethics
-                                                        </li>
-                                                        <li>
-                                                            - Operating Systems
-                                                        </li>
-                                                        <li>
-                                                            - Data Structures and Algorithms
-                                                        </li>
-                                                        <li>
-                                                            - Algorithms
-                                                        </li>
-                                                        <li>
-                                                            - Computer Architecture
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    In progress:
-                                                    <ul>
-                                                        <li>
-                                                            - Intro to Machine Learning
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                              </ul>
-                                        </details>
-                                    </span>
-                                </div>
-                            </div>                      
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section bd-container skills__section" id="skills">
-                <span class="section-subtitle skills__header">Expertise</span>
-                <h2 class="section-title skills__title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__data">
-                        <i class='bx bx-laptop skills__icon'></i>
-                        <h3 class="skills__title">iOS Development</h3>
-                        <p class="skills__description">
-                            I've developed 4 full-stack iOS applications before, with 
-                            experience in Swift, XCode, and GitHub.
-                        </p>
-                        <i class="fab fa-swift fa-2x"></i> &#160
-                        <i class='bx bxl-apple fa-2x'></i> &#160
-                        <i class="fab fa-git-alt fa-2x"></i>
-                        <br></br>
-                        <a href="https://github.com/msuv08/Parstagram#readme" class="button">Recent iOS app </a>
-                    </div>
-                    
-                    <div class="skills__data">
-                        <i class='bx bx-brain skills__icon'></i>
-                        <h3 class="skills__title">AI/ML</h3>
-                        <p class="skills__description">I have experience with computer vision & I'm familiar with 
-                            Python, ML frameworks, and data science.
-                        </p>
-                        <i class="fab fa-python fa-2x"></i> &#160
-                        <i class="fas fa-eye fa-2x"></i> &#160
-                        <i class="fas fa-database fa-2x"></i>
-                        <br></br>
-                        <a href="https://github.com/msuv08/realtime-camera-classifier" class="button">Recent ML Model</a>
-                    </div>
-
-                    <div class="skills__data">
-                        <i class='bx bx-palette skills__icon'></i>
-                        <h3 class="skills__title">UI/UX Design</h3>
-                        <p class="skills__description">
-                            I've prototyped applications before with Figma &
-                            InVision, and created powerful mockups in PowerPoint.
-                        </p>
-                        <i class="fab fa-figma fa-2x"></i> &#160
-                        <i class="fab fa-invision fa-2x"></i> &#160
-                        <i class="fab fa-microsoft fa-2x"></i> 
-                        <br></br>
-                        <a href="assets/pdf/Whats The Tip.pdf" class="button">Recent App Design</a>
-                    </div>
-                </div>
-            </section>
-            <!--===== PROJECT IN MIND =====-->
-            <section class="project section bd-container">
-                <div class="project__container bd-grid">
-                    <div class="project__data">
-                        <i class='bx bx-chat project__icon'></i>
-    
-                        <div>
-                            <h2 class="project__title">Let's chat!</h2>
-                            <p class="project__description">Interested in hiring me or want to have a coffee chat? 
-                                Please reach out!
-                            </p>
-                        </div>
-    
-                        <div>
-                            <a href="#contact" class="button button-white">Chat</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section bd-container portfolio__section" id="portfolio">
-                <span class="section-subtitle portfolio__title">Recent Projects</span>
-                <h2 class="section-title portfolio__subtitle">Portfolio</h2>
-
-                <div class="portfolio__nav">
-                    <span class="portfolio__item active-portfolio" data-filter="all">All</span>
-                    <span class="portfolio__item" data-filter=".aiml">AI/ML</span>
-                    <span class="portfolio__item" data-filter=".ios">iOS</span>
-                    <span class="portfolio__item" data-filter=".research">Research</span>
-                </div>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__content mix aiml">
-                        <a href="#"><img src="assets/img/binaryimage.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <p style = "text-align: right;">
-                                    <i class='bx bx-shape-circle fa-2x'></i> &#160
-                                    <i class="bx bxl-python fa-2x"></i>
-                                </p>
-                            </span>
-                            <a href="https://github.com/msuv08/realtime-camera-classifier"><h2 class="portfolio__title">Binary Image Classifier</h2></a>
-                            <a href="https://github.com/msuv08/realtime-camera-classifier" class="button button-link">View Details</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content mix ios">
-                        <a href="#"><img src="assets/img/parstagram.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <span class="portfolio__subtitle">
-                                    <p style = "text-align: right;">
-                                        <i class="fab fa-instagram fa-2x"></i> &#160
-                                        <i class="fab fa-swift fa-2x"></i>
-                                    </p>
-                                </span>
-                            </span>
-                            <a href="https://github.com/msuv08/Parstagram"><h2 class="portfolio__title">Parstagram</h2></a>
-                            <a href="https://github.com/msuv08/Parstagram" class="button button-link">View More</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content mix research">
-                        <a href="#"><img src="assets/img/seam-carving.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <p style = "text-align: right;">
-                                    <i class="fas fa-award fa-2x"></i> &#160
-                                    <i class="fab fa-cuttlefish fa-2x"></i>
-                                </p>
-                            </span>
-                            <a href="https://github.com/msuv08/seam-carving"><h2 class="portfolio__title">Seam-Carving</h2></a>
-                            <a href="https://github.com/msuv08/seam-carving" class="button button-link">View More</a>
-                        </div>
-                    </div>
-
-
-                    <div class="portfolio__content mix ios">
-                        <a href="#"><img src="assets/img/twitter.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <p style="text-align: right;">
-                                    <i class="fab fa-twitter fa-2x"></i> &#160
-                                    <i class="fab fa-swift fa-2x"></i>
-                                </p>
-                            </span>
-                            <a href="https://github.com/msuv08/TwitterDemoApp"><h2 class="portfolio__title">Twitter Clone</h2></a>
-                            <a href="https://github.com/msuv08/TwitterDemoApp" class="button button-link">View More</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content mix research">
-                        <a href="#"><img src="assets/img/smartpark.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <p style="text-align: right;">
-                                    <i class='bx bx-camera-home fa-2x'></i> &#160
-                                    <i class="bx bxl-python fa-2x"></i>
-                                </p>
-                            </span>
-
-                            <a href="https://github.com/msuv08/Smart-Park"><h2 class="portfolio__title">SmartPark</h2></a>
-                            <a href="https://github.com/msuv08/Smart-Park" class="button button-link">View More</a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content mix ios">
-                        <a href="#"><img src="assets/img/flixster.png" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">
-                                <p style="text-align: right;">
-                                    <i class="fas fa-film fa-2x"></i> &#160
-                                    <i class="fab fa-swift fa-2x"></i>
-                                </p>
-                            </span>
-                            <a href="https://github.com/msuv08/Flixster"><h2 class="portfolio__title">Flixster</h2></a>
-                            <a href="https://github.com/msuv08/Flixster" class="button button-link">View More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== HOBBIES =====-->
-            <section class="hobbies section hobbies__section bd-container">
-                <span class="section-subtitle hobbies__title">Here's what I'm up to...</span>
-                <h2 class="section-title hobbies__subtitle">Hobbies</h2>
-                
-                <div class="hobbies__container swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="hobbies__content swiper-slide">
-                            <img src="assets/img/fender.png" alt="" class="hobbies__img">
-                            <h3 class="hobbies__title">Guitar</h3>
-                            <span class="hobbies__client">Indie & Rock</span>
-                            <p class="hobbies__description">Currently learning the Hotel California solo on my Strat!</p>
-                        </div>
-                        
-                        <div class="hobbies__content swiper-slide">
-                            <img src="assets/img/photography.png" alt="" class="hobbies__img">
-                            <h3 class="hobbies__title">Photography</h3>
-                            <span class="hobbies__client">Amateur</span>
-                            <p class="hobbies__description">Pictures are memories, I love taking photos of places I travel. </p>
-                        </div>
-
-                        <div class="hobbies__content swiper-slide">
-                            <img src="assets/img/f1.png" alt="" class="hobbies__img">
-                            <h3 class="hobbies__title">F1</h3>
-                            <span class="hobbies__client">Enthusiast</span>
-                            <p class="hobbies__description">Passionate about racing, recently saw F1 live @ COTA!</p>
-                        </div>
-
-                        <div class="hobbies__content swiper-slide">
-                            <img src="assets/img/seva.png" alt="" class="hobbies__img">
-                            <h3 class="hobbies__title">Seva Charities</h3>
-                            <span class="hobbies__client">Student Org</span>
-                            <p class="hobbies__description">Member of Seva @ UT, making an impact in Austin. </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--===== CONTACTME =====-->
-            <section class="contact section bd-container contact__section" id="contact">
-                <span class="section-subtitle contact__maintitle">Let's talk!</span>
-                <h2 class="section-title contact__subtitle">Contact Me</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__content bd-grid">
-                        <div class="contact__box">
-                            <i class='bx bx-home contact__icon' ></i>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__description">Austin, Texas</span>
-                        </div>
-
-                        <div class="contact__box">
-                            <a href="tel:5127108188">
-                                <i class='bx bx-phone contact__icon' ></i>
-                                <h3 class="contact__title">Phone</h3>
-                                <span class="contact__description">(512) 710-8188</span>
-                            </a>
-                        </div>
-
-                        <div class="contact__box">
-                            <a href="mailto:mihirsuvarna@utexas.edu">
-                                <i class='bx bx-envelope contact__icon' ></i>
-                                <h3 class="contact__title">Mail</h3>
-                                <span class="contact__description">mihirsuvarna@utexas.edu</span>
-                            </a>
-                        </div>
-
-                        <div class="contact__box">
-                            <a href="https://wa.me/18328330096">
-                                <i class='bx bx-chat contact__icon' ></i>
-                                <h3 class="contact__title">Chat</h3>
-                                <div>
-                                    <a class="contact__social"><i class='bx bxl-whatsapp fa-lg'></i></a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <form action="POST" name= "contact" data-netlify="true" class="contact__form">
-                        <span class="section-subtitle send__title">Or...</span>
-                        <h2 class="section-title send__subtitle">Send me a message</h2>
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" name="name" class="contact__input">
-                            <input type="email" placeholder="Email" name="email" class="contact__input">
-                        </div>
-
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Subject" name="subject" class="contact__input">
-                            <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone" class="contact__input">
-                        </div>
-
-                        <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
-                        <div class="field recaptcha__tag">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div>
-                        <input type="submit" value="Send Message" class="button contact__button">
-                    </form>
-                </div>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__container bd-container">
-                <h1 class="footer__title">Mihir Suvarna</h1>
-                <p class="footer__description">Welcome to my personal website. Please contact me through here.</p>
-
-                <div class="footer__social">
-                    <a href="https://twitter.com/mihirsuvarna_" class="footer__link"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.instagram.com/mihir.suvarna/?hl=en" class="footer__link"><i class='bx bxl-instagram' ></i></i></a>
-                    <a href="https://www.facebook.com/mihir.suvarna.8" class="footer__link"><i class='bx bxl-facebook' ></i></a>
-                </div>
-
-                <p class="footer__copy">&#169; 2021 Mihir Suvarna. All rights reserved. </p>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Mihir Suvarna &middot; Wise</p>
+            <h1>Building software for the world's money.</h1>
+            <p class="lede">
+              Product-focused engineer blending regional research with pragmatic systems craft to keep global balances calm.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="button">Collaborate</a>
+              <a href="mailto:mihirsuvarna@utexas.edu" class="button button--ghost">Request CV</a>
             </div>
-        </footer>
-        
-        <!-- ===== MIXITUP FILTER ===== -->
-        <script src="assets/js/mixitup.min.js"></script>
-        
-        <!-- ===== SWIPER JS ===== -->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        
-        <!-- ===== GSAP ===== -->
-        <script src="assets/js/gsap.min.js"></script>
-        <!-- ===== SCROLL TRIGGER GSAP ===== -->
-        <script src="assets/js/ScrollTrigger.min.js"></script>
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
-        </script>
-        
-        <!-- ===== MAIN JS ===== -->
-        <script src="assets/js/main.js"></script>
+            <div class="hero__chips">
+              <span>Fintech</span>
+              <span>Java • K8s • Envoy</span>
+              <span>AI/ML</span>
+              <span>Distributed systems</span>
+              <span>Autonomy & C++</span>
+            </div>
+          </div>
+          <div class="hero__panel">
+            <div class="hero__frame">
+              <img src="assets/img/circlepic.jpg" alt="Portrait of Mihir" />
+            </div>
+            <div class="hero__badge hero__badge--highlight">
+              <strong>MSCS '24 | BSCS '23 | UT 🤘</strong>
+              <span>Austin, TX</span>
+            </div>
+            <div class="hero__metrics">
+              <div>
+                <p class="metric__value">10M+</p>
+                <p class="metric__label">devices touched</p>
+              </div>
+              <div>
+                <p class="metric__value">2</p>
+                <p class="metric__label">published papers</p>
+              </div>
+              <div>
+                <p class="metric__value">8</p>
+                <p class="metric__label">years shipping</p>
+              </div>
+            </div>
+            <div class="hero__social">
+              <a href="https://www.linkedin.com/in/mihir-suvarna/" aria-label="LinkedIn" class="social-app" data-brand="linkedin">
+                <span class="social-app__icon">
+                  <img src="assets/img/icons/linkedin.png" alt="LinkedIn icon" />
+                </span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/msuv08" aria-label="GitHub" class="social-app" data-brand="github">
+                <span class="social-app__icon">
+                  <img src="assets/img/icons/github.png" alt="GitHub icon" />
+                </span>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=2P7c1rAAAAAJ&hl=en"
+                aria-label="Google Scholar"
+                class="social-app"
+                data-brand="scholar"
+              >
+                <span class="social-app__icon">
+                  <img src="assets/img/icons/google-scholar-2.png" alt="Google Scholar icon" />
+                </span>
+                <span>Scholar</span>
+              </a>
+              <a href="https://x.com/msuvvv" aria-label="X" class="social-app" data-brand="x">
+                <span class="social-app__icon">
+                  <img src="assets/img/icons/x.png" alt="X icon" />
+                </span>
+                <span>X</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- ===== SMOOTH SCROLL JS ===== -->
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+      <section class="about" id="about">
+        <div class="focus">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Focus</p>
+              <h2>Minimal surface. Sharp systems.</h2>
+            </div>
+            <div class="focus__grid">
+              <article>
+                <h3>Wise Account 🏦</h3>
+                <p>Building the future of Accounts at Wise – a calmer home for international money.</p>
+              </article>
+              <article>
+                <h3>AI/ML background 🤖</h3>
+                <p>Work on autonomous vehicles, human-in-the-loop robotics, and scaling ML tooling.</p>
+              </article>
+              <article>
+                <h3>Notes & Ops ✍️</h3>
+                <p>Documenting experiments in <code>assets/data/blog.json</code>, chasing delightful design details.</p>
+              </article>
+            </div>
+          </div>
+        </div>
 
-        <!-- ===== SMOOTH SCROLL JS ACTIVATION ===== -->
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
-        </script>
+        <div class="story">
+          <div class="container story__grid">
+            <article>
+              <p class="eyebrow">Story</p>
+              <h2>Finance work rooted in autonomy research.</h2>
+              <p>Robotics labs taught me to obsess over guardrails; Wise needs the same calm for people’s money.</p>
+            </article>
+            <article class="story__card">
+              <p class="signals__title">Guide rails</p>
+              <h3><a href="https://arxiv.org" target="_blank" rel="noopener">Iterative Alignment</a></h3>
+              <p>Inspired the observability + drift monitoring that now protects global balances.</p>
+            </article>
+            <article class="story__card">
+              <p class="signals__title">Bias audits</p>
+              <h3><a href="https://arxiv.org" target="_blank" rel="noopener">Sensor-rich fairness</a></h3>
+              <p>Those testing muscles now keep risk + compliance happy when shipping ML in fintech.</p>
+            </article>
+          </div>
+        </div>
 
-    </body>
+        <div class="education" id="education">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Education</p>
+              <h2>CS at UT Austin 🎓</h2>
+            </div>
+            <div class="education__grid">
+              <article>
+                <span class="edu__label">M.S. Computer Science</span>
+                <h3>2022&ndash;2024 &middot; GPA 3.84</h3>
+                <p>Autonomy, perception, systems, and design ops.</p>
+              </article>
+              <article>
+                <span class="edu__label">B.S. Computer Science (AI/ML)</span>
+                <h3>2020&ndash;2023 &middot; GPA 3.76</h3>
+                <p>Core systems, architecture, databases, and product engineering.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>A tour.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__header">
+                <div class="timeline__logo">
+                  <img src="assets/img/logos/wise.png" alt="Wise logo" />
+                </div>
+                <div class="timeline__meta">
+                  <h3>Software Engineer &middot; Wise</h3>
+                  <span>Aug 2024 &ndash; Present</span>
+                </div>
+              </div>
+              <div class="timeline__body">
+                <p>Owning Wise Account balances, interest, and onboarding bank partners.</p>
+                <ul>
+                  <li>Onboarding new bank partners to broaden our Local Account Details product.</li>
+                  <li>Shipped LLM's to production, tightened onboarding guardrails. </li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__header">
+                <div class="timeline__logo">
+                  <img src="assets/img/logos/trustwise.png" alt="Trustwise logo" />
+                </div>
+                <div class="timeline__meta">
+                  <h3>Machine Learning Engineer &middot; Trustwise</h3>
+                  <span>Jun 2023 &ndash; Sep 2023</span>
+                </div>
+              </div>
+              <div class="timeline__body">
+                <p>Fine-tuned 10B+ parameter LLMs and shipped embedding APIs for healthcare & finance.</p>
+                <ul>
+                  <li>Boosted model performance 23% by cleaning 200K+ files and tuning supervised pairs.</li>
+                  <li>Deployed production LLM endpoints on AWS with 99.9% uptime while preventing hallucinations.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__header">
+                <div class="timeline__logo">
+                  <img src="assets/img/logos/autonomic.png" alt="Autonomic logo" />
+                </div>
+                <div class="timeline__meta">
+                  <h3>Software Engineer &middot; Autonomic</h3>
+                  <span>Jun 2022 &ndash; Aug 2022</span>
+                </div>
+              </div>
+              <div class="timeline__body">
+                <p>Architected monitoring for Total Mobility Cloud supporting 10M+ vehicles.</p>
+                <ul>
+                  <li>Streamlined Kafka + Kubernetes flows for near real-time telemetry.</li>
+                  <li>Led an intern squad focused on reliability-first delivery.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__header">
+                <div class="timeline__logo">
+                  <img src="assets/img/logos/rai.png" alt="Responsible AI Institute logo" />
+                </div>
+                <div class="timeline__meta">
+                  <h3>AI Consultant &middot; Responsible AI Institute</h3>
+                  <span>Jan 2022 &ndash; Apr 2022</span>
+                </div>
+              </div>
+              <div class="timeline__body">
+                <p>Operationalized Microsoft/Google RAI playbooks for partner orgs.</p>
+                <ul>
+                  <li>Automated ethical AI reports used by 5+ partner teams.</li>
+                  <li>Collaborated with Cambridge researchers on certification pathways.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="experience__publications" id="publications">
+            <div class="section-heading section-heading--sub">
+              <p class="eyebrow">Publications</p>
+              <h2>Recent Papers 📂</h2>
+            </div>
+            <div class="papers__grid">
+              <article>
+                <p class="project__label">arXiv &middot; 2025</p>
+                <h3><a href="https://arxiv.org/abs/2504.01266" target="_blank" rel="noopener">GigaAPI: Simplifying Multi-GPU Programming</a></h3>
+                <p>Introduces a user-space API that abstracts low-level CUDA/C++ work, delivering modular building blocks for cross-GPU image processing and compute so researchers can prototype faster.</p>
+              </article>
+              <article>
+                <p class="project__label">arXiv &middot; 2024</p>
+                <h3><a href="https://arxiv.org/abs/2402.14928" target="_blank" rel="noopener">Learning Kinodynamics for Autonomous Drifting</a></h3>
+                <p>Demonstrates a data-driven kinodynamic planner that learns from IMU traces to tighten drift trajectories and keep small autonomous cars on line at high speed.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects & Prototypes 🛠️</h2>
+            <p>Thoughtful experiments that mix systems, developer tools, and playful polish.</p>
+          </div>
+          <div class="project__grid">
+            <article class="project__card splash--gold">
+              <div>
+                <p class="project__label">Graphics</p>
+                <h3><a href="https://github.com/msuv08/seam-carving">Seam-Carving</a></h3>
+                <p>Content-aware image resizing experiment using energy maps and live visualization.</p>
+              </div>
+              <img src="assets/img/seam-carving.png" alt="Seam carving prototype" loading="lazy" />
+            </article>
+            <article class="project__card splash--teal">
+              <div>
+                <p class="project__label">iOS</p>
+                <h3><a href="https://github.com/msuv08/Parstagram">Parstagram</a></h3>
+                <p>Privacy-forward social app exploring content creation flows — with in-memory cache & DB.</p>
+              </div>
+              <img src="assets/img/parstagram.png" alt="Parstagram mock" loading="lazy" />
+            </article>
+            <article class="project__card splash--sage">
+              <div>
+                <p class="project__label">Realtime CV</p>
+                <h3><a href="https://github.com/msuv08/realtime-camera-classifier">Realtime Camera Classifier</a></h3>
+                <p>Edge-friendly model runner with on-device telemetry + retrain hooks.</p>
+              </div>
+              <img src="assets/img/binaryimage.png" alt="Binary image classifier" loading="lazy" />
+            </article>
+            <article class="project__card splash--ink">
+              <div>
+                <p class="project__label">Playground</p>
+                <h3><a href="https://github.com/msuv08/TwitterDemoApp">Twitter Clone</a></h3>
+                <p>Swift client experimenting with feed architecture + micro-interactions, with multi-user support.</p>
+              </div>
+              <img src="assets/img/twitter.png" alt="Twitter app mock" loading="lazy" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Writing</p>
+            <h2>Recent articles.</h2>
+            <p>Posts below load from <code>assets/data/blog.json</code>. New entries added there. </p>
+          </div>
+          <div class="blog__grid" id="blog-list" aria-live="polite"></div>
+          <p class="blog__note">
+            Tip: drafts are stored as markdown, converted to HTML during a build step, and rewrites <code>assets/data/blog.json</code>
+            so this feed stays up to date automatically.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__grid">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Contact</p>
+              <h2>Let's build fast and design responsibly.</h2>
+              <p>Austin coffee, remote collabs, critique swaps.</p>
+            </div>
+            <div class="contact__links">
+              <a href="mailto:mihirsuvarna@utexas.edu"><i class="bx bx-envelope"></i> mihirsuvarna@utexas.edu</a>
+              <a href="tel:5127108188"><i class="bx bx-phone"></i> (512) 710&ndash;8188</a>
+              <span><i class="bx bx-home"></i> Austin, Texas</span>
+            </div>
+          </div>
+          <form name="contact" method="POST" data-netlify="true" class="contact__form">
+            <input type="hidden" name="form-name" value="contact" />
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="button">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Mihir Suvarna. Crafted with intention.
+        </p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="to-top" aria-label="Back to top">
+      <i class="bx bx-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

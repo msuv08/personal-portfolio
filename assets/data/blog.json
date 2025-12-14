@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Designing observability for ML pipelines",
+    "summary": "Cross-region alerting, golden paths, and lessons from API telemetry work.",
+    "url": "#",
+    "date": "Coming soon"
+  },
+  {
+    "title": "What my thesis taught me about shipping responsibly",
+    "summary": "Applying grad-school rigor to roadmap tradeoffs and release cadence.",
+    "url": "#",
+    "date": "Coming soon"
+  },
+  {
+    "title": "Notes from autonomous vehicles to modern fintech",
+    "summary": "How safety cases, testing, and design language translate between domains.",
+    "url": "#",
+    "date": "Coming soon"
+  }
+]
