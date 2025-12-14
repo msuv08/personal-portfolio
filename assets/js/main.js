@@ -63,3 +63,29 @@ if (yearTarget) {
 if (toTop) {
   toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
+
+const blogList = document.getElementById('blog-list');
+if (blogList) {
+  fetch('assets/data/blog.json')
+    .then((res) => res.json())
+    .then((posts) => {
+      if (!Array.isArray(posts) || posts.length === 0) {
+        blogList.innerHTML = '<p class="blog__empty">No posts yet. Add entries to assets/data/blog.json.</p>';
+        return;
+      }
+      blogList.innerHTML = posts
+        .map(
+          (post) => `
+            <article>
+              <p class="blog__label">${post.date || ''}</p>
+              <h3><a href="${post.url}" target="_blank" rel="noopener">${post.title}</a></h3>
+              <p>${post.summary}</p>
+            </article>
+          `
+        )
+        .join('');
+    })
+    .catch(() => {
+      blogList.innerHTML = '<p class="blog__empty">Unable to load posts right now.</p>';
+    });
+}
