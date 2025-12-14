@@ -1,7 +1,7 @@
 [
   {
-    "title": "Designing observability for ML payments APIs",
-    "summary": "Cross-region alerting, golden paths, and lessons from Wise Account telemetry work.",
+    "title": "Designing observability for ML pipelines",
+    "summary": "Cross-region alerting, golden paths, and lessons from API telemetry work.",
     "url": "#",
     "date": "Coming soon"
   },
