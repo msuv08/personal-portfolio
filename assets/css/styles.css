@@ -193,6 +193,33 @@ section {
   padding-top: 6rem;
 }
 
+.about {
+  padding: 5rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about > * + * {
+  margin-top: 3.5rem;
+}
+
+.about .story,
+.about .education {
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 3rem 0 3.5rem;
+    gap: 2.5rem;
+  }
+
+  .about > * + * {
+    margin-top: 2.5rem;
+  }
+}
+
 .hero__grid {
   display: grid;
   gap: 3rem;
@@ -278,13 +305,23 @@ section {
   color: var(--muted);
 }
 
-.social-app img {
-  width: 60px;
-  height: 60px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.social-app__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-app__icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -292,13 +329,13 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .social-app img {
-    width: 72px;
-    height: 72px;
+  .social-app__icon {
+    width: 78px;
+    height: 78px;
   }
 }
 
-.social-app:hover img {
+.social-app:hover .social-app__icon {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
 }
@@ -429,10 +466,6 @@ section {
   background: var(--card);
 }
 
-.education {
-  padding: 4rem 0;
-}
-
 .education__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -458,10 +491,6 @@ section {
   color: var(--ut-orange);
 }
 
-.papers {
-  padding: 4rem 0;
-}
-
 .papers__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -473,6 +502,33 @@ section {
   border-radius: var(--radius);
   padding: 1.5rem;
   background: var(--card);
+}
+
+.section-heading--sub {
+  margin-bottom: 1.5rem;
+}
+
+.section-heading--sub h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+.experience__publications {
+  margin-top: 5.5rem;
+}
+
+.about + .experience {
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 640px) {
+  .about + .experience {
+    margin-top: 2.5rem;
+  }
+}
+
+#education,
+#publications {
+  scroll-margin-top: 140px;
 }
 
 .signals {
